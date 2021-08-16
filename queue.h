@@ -14,7 +14,7 @@ void __attribute__ ((constructor)) default_constructor__19BIT0292() //it get cal
     fp__19BIT0292[3]=&display;
 } 
 
-void qmenu()
+void menu()
 {
     printf("\n\n\n1)Enqueue\n2)Dequeue\n3)Front\n4)Rear\n5)Display\n");
     printf("\nEnter your choice: ");

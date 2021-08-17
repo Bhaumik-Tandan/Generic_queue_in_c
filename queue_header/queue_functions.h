@@ -1,61 +1,50 @@
-#include "display_fucntion.h"// it contains the display function
-void enqueue__19BIT0292(void* a,int v)
+#define t q->r__19BIT0292
+#define  d_type__19BIT0292 q->d_type__19BIT0292
+void* denqueue(queue *q)
 {
-    #define t r__19BIT0292
-    t++;
-    queue__19BIT0292=realloc(queue__19BIT0292,(t+1)*sizeof(void *));//array size increased
-    queue__19BIT0292[t]=a;//pointer address given to array
-    d_type__19BIT0292=realloc(d_type__19BIT0292,(t+1)*sizeof(short));
-    d_type__19BIT0292[t]=v;
-    printf("\n");
-    disp(t,0);
-    printf(" queued");
-}
-void* denqueue()
-{
-    #define t r__19BIT0292
+    #include "display_fucntion.h"// it contains the display function
     if(t==-1)
     printf("\nQueue is empty");
     else
     {
         printf("\n");
-        disp(0,0);
+        disp(q,0,0);
         printf(" dequeued");
-        void* a=queue__19BIT0292[0];
-        queue__19BIT0292=queue__19BIT0292+1;
-        d_type__19BIT0292=d_type__19BIT0292+1;
+        void* a=q->queue__19BIT0292[0];
+        q->queue__19BIT0292 = q->queue__19BIT0292+1;
+        q->d_type__19BIT0292 = q->d_type__19BIT0292+1;
         t--;
         return a;
     }
 }
 
-void* front()
+void* front(queue *q)
 {
-    #define t r__19BIT0292
+    #include "display_fucntion.h"// it contains the display function
     if(t==-1)
     printf("\nQueue is empty");
     else{
         printf("\nFront Element is: ");
-       disp(0,0);
-       return queue__19BIT0292[0];
+       disp(q,0,0);
+       return q->queue__19BIT0292[0];
     }
 }
 
-void* rear()
+void* rear(queue *q)
 {
-    #define t r__19BIT0292
+    #include "display_fucntion.h"// it contains the display function
     if(t==-1)
     printf("\nQueue is empty");
     else{
         printf("\nRear Element is: ");
-       disp(t,0);
-       return queue__19BIT0292[t];
+       disp(q,t,0);
+       return q->queue__19BIT0292[t];
     }
 }
 
-void* display()
+void* display(queue *q)
 {
-    #define t r__19BIT0292
+    #include "display_fucntion.h"// it contains the display function
     if(t==-1){
     printf("\nQueue is empty");
     return;
@@ -67,9 +56,11 @@ void* display()
     printf("%12s\n","v");
 
     for(int i=t;i>=0;i--)
-    disp(i,1);
+    disp(q,i,1);
     printf("%11s\n","|");
     printf("%16s\n","|front");
     printf("%11s\n","|");    
     printf("%11s\n","v");
 }
+#undef t
+#undef d_type__19BIT0292 

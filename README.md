@@ -6,6 +6,24 @@ concept of polymorphism in C with the help of void and
 function pointer. It also helps us to understand that  how
 can we create a hetrogeneous array in C.
 
+# Sample Code
+```
+#include<queue.h>
+main()
+{
+   queue q;
+   q_in(&q);
+   enqueue(&q,'c');
+   front(&q);
+   rear(&q);
+   menu(&q);
+   enqueue(&q,(char)'c');
+   rear(&q);
+}
+```
+![image](https://user-images.githubusercontent.com/62440699/130285483-29ba5346-2375-49c9-aef2-9220aca3995b.png)
+![image](https://user-images.githubusercontent.com/62440699/130285541-22f5e024-427c-4c42-9a71-2e489091a265.png)
+![image](https://user-images.githubusercontent.com/62440699/130285552-b26c49ea-95bd-405f-95a5-e7e0fb9b1634.png)
 
 
 ## Documentation

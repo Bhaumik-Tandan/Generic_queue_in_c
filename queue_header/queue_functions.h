@@ -1,6 +1,6 @@
 #define t q->r__19BIT0292
 #define  d_type__19BIT0292 q->d_type__19BIT0292
-void* denqueue(queue *q)
+void* dequeue(queue *q)
 {
     #include "display_fucntion.h"// it contains the display function
     if(t==-1)

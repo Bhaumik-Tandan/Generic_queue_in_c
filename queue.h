@@ -16,7 +16,7 @@ void q_in(queue *q)
 void menu(queue *q)
 {
     void* (* fp[4])(queue*);
-    fp[0]=&denqueue;
+    fp[0]=&dequeue;
     fp[1]=&front;
     fp[2]=&rear;
     fp[3]=&display;

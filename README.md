@@ -32,7 +32,7 @@ This queue supports elements of any data type.
 
 ### Initialise
 You can have to first declare and initialse the
-stack varible by writing
+queue varible by writing
 
 ```bash
  queue q;
@@ -178,7 +178,7 @@ Clone the repository to your local system using the command
 ```
 
 In order to include the file from anywhere you must add
-the stack_header folder and you queue.h file in your sytem's
+the queue_header folder and you queue.h file in your sytem's
 include folder.
 
 You can check it's path using the command
